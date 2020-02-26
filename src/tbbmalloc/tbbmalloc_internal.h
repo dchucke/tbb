@@ -529,7 +529,7 @@ public:
 // Block header is used during block coalescing
 // and must be preserved in used blocks.
 class BlockI {
-    intptr_t     blockState[2];
+    intptr_t     __unused blockState[2];
 };
 
 struct LargeMemoryBlock : public BlockI {

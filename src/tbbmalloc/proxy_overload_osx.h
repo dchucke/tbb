@@ -112,7 +112,7 @@ static void impl_free_definite_size(struct _malloc_zone_t*, void *ptr, size_t si
 }
 
 /* Empty out caches in the face of memory pressure. */
-static size_t impl_pressure_relief(struct _malloc_zone_t *, size_t goal)
+static size_t impl_pressure_relief(struct _malloc_zone_t *, size_t __unused goal)
 {
     return 0;
 }

@@ -192,8 +192,8 @@ intptr_t memAllocKB, memHitKB;
 
 inline bool lessThanWithOverflow(intptr_t a, intptr_t b)
 {
-    return (a < b && (b - a < UINTPTR_MAX/2)) ||
-           (a > b && (a - b > UINTPTR_MAX/2));
+    return (a < b && (b - a < INTPTR_MAX)) ||
+           (a > b && (a - b > INTPTR_MAX));
 }
 
 /* ----------------------------------- Operation processing methods ------------------------------------ */
